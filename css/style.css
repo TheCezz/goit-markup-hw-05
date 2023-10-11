@@ -75,6 +75,7 @@ h2 {
 }
 h3 {
   margin-top: 0px;
+
   line-height: 100%;
   font-size: var(--small-font-size);
 }
@@ -288,6 +289,8 @@ body {
   justify-content: space-between;
   padding: 0px 0 94px 0;
   margin: 0px;
+  border: 0px;
+  gap: 30px;
 }
 
 .regular-customers ul {
@@ -386,7 +389,7 @@ body {
   padding-top: 4px;
   margin: 0;
 }
-.portoflio-item:hover {
+.portfolio-item-wrapper:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -481,6 +484,13 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 1;
+  transition: opacity;
+  transition-duration: var(--default-duration);
+  transition-timing-function: var(--default-transition);
+}
+
+.modal.is-hidden {
+  opacity: 0;
 }
 
 .modal-content {
@@ -509,3 +519,70 @@ body {
 .close-btn:hover {
   color: var(--contrast-color);
 }
+
+.what-we-do-overlay {
+  position: absolute;
+  display: flex;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--contrast-color);
+  align-content: center;
+  justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0px;
+  border: 0px;
+  overflow: hidden;
+}
+
+.what-we-do li {
+  position: relative;
+  height: 294px;
+}
+.what-we-do h3 {
+  margin: 0;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+}
+
+.portfolio-item-wrapper:hover .portfolio-overlay {
+  transform: translatey(0);
+}
+
+.portfolio-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.portfolio-item p{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color :var(--contrast-color);
+  padding: 63px 24px 91px 24px;
+
+}
+}src="./images/technoduck.jpg"
+              width="370"
+              alt="technoduck web-site preview"
