@@ -569,20 +569,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-.portfolio-item p{
+.portfolio-item p {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.03em;
   text-align: left;
-  color :var(--contrast-color);
+  color: var(--contrast-color);
   padding: 63px 24px 91px 24px;
-
 }
-}src="./images/technoduck.jpg"
-              width="370"
-              alt="technoduck web-site preview"
+
+.nav-link .nav-link-current {
+  position: relative;
+}
+/* .underline {
+  position: absolute;
+  fill: var(--brand-color);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+} */
